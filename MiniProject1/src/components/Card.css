@@ -1,0 +1,138 @@
+/* ===== Card Container ===== */
+.card {
+  width: 360px;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* ===== Top Section ===== */
+.card .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card .top img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+}
+
+/* Save Button */
+.card .top button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #f3f4f6;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 12px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #111827;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.card .top button svg {
+  width: 16px;
+  height: 16px;
+}
+
+.card .top button:hover {
+  background: #e5e7eb;
+}
+
+/* ===== Center Section ===== */
+.card .center h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.card .center h3 span {
+  font-size: 12px;
+  font-weight: 500;
+  color: #6b7280;
+}
+
+.card .center h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 12px;
+}
+
+/* Tags */
+.card .center div {
+  display: flex;
+  gap: 10px;
+}
+
+.card .center div h4 {
+  font-size: 12px;
+  font-weight: 600;
+  color: #2563eb;
+  background: #eff6ff;
+  padding: 6px 10px;
+  border-radius: 16px;
+}
+
+/* ===== Bottom Section ===== */
+.card .bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card .bottom h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #16a34a;
+}
+
+.card .bottom p {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* Apply Button */
+.card .bottom button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.card .bottom button:hover {
+  background: #1e40af;
+  transform: translateY(-1px);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 420px) {
+  .card {
+    width: 100%;
+  }
+}
